@@ -1,0 +1,101 @@
+
+```json
+[
+  {
+    "title": "Epic: Environment Setup & ZeroDB Integration",
+    "body": "Set up the project environment and integrate ZeroDB APIs for event publishing and streaming."
+  },
+  {
+    "title": "Set up React + Tailwind project structure",
+    "body": "As a developer, I want to bootstrap a React + Tailwind project so that I have a clean, responsive foundation to build EventPulse."
+  },
+  {
+    "title": "Install dependencies for real-time and UI components",
+    "body": "As a developer, I want to install required dependencies (axios, uuid, react-beautiful-dnd, tailwind) so that I can implement UI and event functionality quickly."
+  },
+  {
+    "title": "Implement ZeroDB client wrapper",
+    "body": "As a developer, I want a wrapper with functions `publishEvent(channel, event_type, payload)` and `subscribeToStream(channel, onMessage)` so that I can easily call ZeroDB's /events/publish and /events/stream APIs."
+  },
+  {
+    "title": "Epic: Data Model & Event Contracts",
+    "body": "Define in-memory state structure and event type contracts to standardize communication between clients via ZeroDB."
+  },
+  {
+    "title": "Define in-memory board, columns, and tasks data structure",
+    "body": "As a developer, I want a minimal local data model for board, columns, and tasks so that I can maintain UI state without a heavy backend."
+  },
+  {
+    "title": "Define event type constants and payload shapes",
+    "body": "As a developer, I want event type constants (`task_created`, `task_updated`, `task_moved`, `task_deleted`, `user_joined`, `user_left`) with defined payload structures so that all clients can interpret events consistently."
+  },
+  {
+    "title": "Epic: UI Scaffolding",
+    "body": "Build the base user interface for the task board, columns, and task cards."
+  },
+  {
+    "title": "Create Board layout with three fixed columns",
+    "body": "As a user, I want to see three default columns (Todo, In Progress, Done) so that I can organize tasks visually."
+  },
+  {
+    "title": "Create Task Card component",
+    "body": "As a user, I want task cards to display title, status, and actions so that I can quickly identify and interact with tasks."
+  },
+  {
+    "title": "Implement New Task form",
+    "body": "As a user, I want to add new tasks from the board UI so that I can quickly create work items."
+  },
+  {
+    "title": "Enable task drag-and-drop between columns",
+    "body": "As a user, I want to drag tasks to different columns so that I can update their status intuitively."
+  },
+  {
+    "title": "Epic: Real-Time Event Handling",
+    "body": "Implement incoming and outgoing event flows for real-time task updates and presence."
+  },
+  {
+    "title": "Subscribe to ZeroDB /events/stream for board channel",
+    "body": "As a user, I want my board to receive real-time updates from other clients so that changes appear instantly."
+  },
+  {
+    "title": "Publish task events via /events/publish",
+    "body": "As a user, I want my changes to broadcast to other users in real time so that we stay in sync."
+  },
+  {
+    "title": "Implement real-time presence indicators",
+    "body": "As a user, I want to see who else is on the board so that I know when my teammates are active."
+  },
+  {
+    "title": "Epic: Persistence & State Management",
+    "body": "Manage task board state locally and optionally persist to ZeroDB documents."
+  },
+  {
+    "title": "Implement useBoardState hook",
+    "body": "As a developer, I want a central state hook to manage tasks and columns so that I can easily update state from both events and user actions."
+  },
+  {
+    "title": "Optional: Persist tasks and board to ZeroDB documents",
+    "body": "As a developer, I want to store board/task state in ZeroDB so that it can be restored on reload."
+  },
+  {
+    "title": "Epic: Styling & Demo Readiness",
+    "body": "Apply styling and prepare the app for live demo."
+  },
+  {
+    "title": "Apply Tailwind styling to columns and task cards",
+    "body": "As a user, I want a clean, modern UI so that the board is visually appealing and easy to use."
+  },
+  {
+    "title": "Add Activity Panel for incoming events",
+    "body": "As a user, I want to see a simple log of recent actions so that I can track changes during a session."
+  },
+  {
+    "title": "Deploy to Vercel or Netlify",
+    "body": "As a developer, I want the app hosted live so that it can be demoed to stakeholders."
+  },
+  {
+    "title": "Test with multiple browser tabs for real-time sync",
+    "body": "As a developer, I want to test the board with two tabs so that I can verify real-time collaboration works correctly."
+  }
+]
+
